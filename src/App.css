@@ -1,0 +1,185 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+@font-face {
+    font-family: 'Bubbly';
+    src: local('Bubbly'), url(./fonts/Bubbly-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Script MT Bold';
+    src: local('Script MT Bold'),
+        url(./fonts/Scriptbl.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Navbar and Topbar */
+.adjustTopBar {
+    top: -40px !important;
+}
+
+.adjustNavBar {
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    /* background: rgba(26, 24, 22, 0.7) !important; */
+    top: 0 !important;
+}
+
+.colorChange {
+    background: rgba(26, 24, 22, 0.75) !important;
+}
+
+.buttonClicked {
+    background: #e60a08 !important;
+    color: #d9d9d9 !important;
+}
+
+/* Menu */
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+
+}
+
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin-top: 20px;
+}
+
+/* Modal */
+.modal {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-open {
+    padding-right: 0px !important;
+    overflow: auto !important;
+}
+
+.modal-container {
+    height: 24.375rem;
+}
+
+.modal-header {
+    background-image: linear-gradient(to right, #0d0d0d, #1a1a1a);
+    border: none !important;
+    font-size: 1rem;
+    color: white;
+    padding: 0 !important;
+    display: block !important;
+
+}
+
+.modal-header .btn-close {
+    position: absolute !important;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-body {
+    font-size: 0.875rem;
+    background-color: rgb(13, 13, 13);
+    border: none !important;
+    letter-spacing: -0.14px;
+    line-height: 1.25em;
+    color: #919191;
+}
+
+.modal-footer {
+    background-color: #2d3739;
+}
+
+.modal-infotype {
+    color: white;
+    font-size: 1.125rem;
+    letter-spacing: -0.18;
+}
+
+.modal-content {
+    height: fit-content;
+    opacity: 0.9;
+    border: none !important;
+}
+
+/* Back to Top button */
+.scroll-button {
+    background-color: transparent;
+    font-size: 2rem;
+    border: 1px solid #abbaba;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+/* Section */
+
+.section-title {
+    text-align: left;
+}
+
+.section-title h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 4px 10px;
+}
+
+
+
+.food-card--vertical {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+
+}
+
+@media (max-width: 768px) {
+    .food-card--vertical img {
+        width: 128px;
+        height: 110px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-title h2 {
+        margin-top: 20px;
+    }
+
+    .section-title p {
+        margin-bottom: 20px;
+    }
+
+    .food-card--vertical img {
+        width: 176px;
+        height: 158px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
