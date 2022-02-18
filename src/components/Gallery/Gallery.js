@@ -15,12 +15,20 @@ const StyledImageGallery = styled(ImageGallery)``;
 
 const Gallery = () => {
   return (
-    <GalleryContainer>
-      <Container id='gallery' data-aos='fade-up'>
-        <SectionTitle style={{ marginBottom: '32.8px' }}>
+    <GalleryContainer id='gallery'>
+      <Container data-aos='fade-up'>
+        <SectionTitle style={{ marginBottom: '32.8px' }} data-aos='fade-up'>
           <CollectionsOutlined /> Gallery
         </SectionTitle>
-        <StyledImageGallery items={galleryItems} />
+
+        <StyledImageGallery
+          items={galleryItems}
+          showPlayButton={false}
+          showBullets={true}
+          autoPlay={true}
+          lazyLoad={true}
+          slideInterval={4000}
+        />
       </Container>
     </GalleryContainer>
   );

@@ -3,7 +3,7 @@ import {
   ImageContainer,
   ModalImage,
   FoodCategory,
-  FoodName,
+  FoodModalName,
   FoodDesc,
   InfoContainer,
   ItemRow,
@@ -17,6 +17,7 @@ const FoodModal = ({ foods, onHide, show, foodSelected }) => {
 
   return (
     <Modal
+      size='lg'
       show={show}
       onHide={onHide}
       centered
@@ -40,12 +41,14 @@ const FoodModal = ({ foods, onHide, show, foodSelected }) => {
             ) : (
               <FoodCategory>{food.category}</FoodCategory>
             )}
-          </Modal.Header>
-          <Modal.Body className='modal-body' style={{ padding: '12px 25px' }}>
-            <FoodName className='card-title' style={{ color: '#e60a08' }}>
+            <FoodModalName
+              className='card-title'
+              style={{ color: '#e60a08', padding: '12px 25px 0 25px' }}
+            >
               {food.id >= 30 ? food.name : `${food.id}. ${food.name}`}
-            </FoodName>
-
+            </FoodModalName>
+          </Modal.Header>
+          <Modal.Body className='modal-body' style={{ padding: '3px 25px 12px 25px' }}>
             <FoodDesc>{food.desc}</FoodDesc>
             {food.choice ? (
               <InfoContainer className='d-flex flex-column'>
@@ -82,6 +85,9 @@ const FoodModal = ({ foods, onHide, show, foodSelected }) => {
               </ItemPrice>
             )}
           </Modal.Body>
+          {food.note && (
+            <Modal.Footer className='modal-body'>{food.note}</Modal.Footer>
+          )}
         </>
       ))}
     </Modal>

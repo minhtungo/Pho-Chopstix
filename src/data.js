@@ -22,21 +22,24 @@ export const sliderItems = [
 export const contactInfo = {
   address: '137 Princess St, Kingston, ON K7L 1A8',
   phone: '(613) 766-3368',
-  email: 'phochopstix@gmail.com',
   openingHours: [
     {
-      days: 'Monday - Friday:',
-      hours: '11 a.m - 8 p.m'
+      days: 'Monday - Thursday:',
+      hours: '11 a.m - 8 p.m',
     },
-        {
-      days: 'Saturday - Sunday:',
-      hours: '12 p.m - 8 p.m'
-    }
+    {
+      days: 'Friday - Saturday:',
+      hours: '11 a.m - 8:30 p.m',
+    },
+    {
+      days: 'Sunday:',
+      hours: '12 p.m - 8 p.m',
+    },
   ],
   mapUrl:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.795822337863!2d-76.48584684788013!3d44.23186187900318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2ab67435a4d85%3A0x337f399f99690a71!2sPho%20Chopstix!5e0!3m2!1sen!2sca!4v1642244680314!5m2!1sen!2sca',
   facebook: 'https://www.facebook.com/profile.php?id=100076502762476',
-  instagram: 'https://www.instagram.com/phochopstix.ca/'
+  instagram: 'https://www.instagram.com/phochopstix.ca/',
 };
 
 export const about = {
@@ -66,6 +69,7 @@ export const foods = [
     desc: '2 Rolls',
     price: '5.50',
     img: '',
+    note: '* Pick your sauce: Fish sauce, Peanut sauce, Tamarind sauce',
   },
   {
     id: 2,
@@ -81,6 +85,7 @@ export const foods = [
     price: '5.95',
     sauce: ['Fish Sauce', 'Peanut Sauce', 'Tamarind Sauce'],
     img: '',
+    note: '* Pick your sauce: Fish sauce, Peanut sauce, Tamarind sauce',
   },
   {
     id: 3,
@@ -90,23 +95,23 @@ export const foods = [
     choice: [
       {
         name: '🥩 Rare beef',
-        size: ['Large'],
-        price: ['13.00'],
+        size: ['Small', 'Large', 'Extra Large'],
+        price: ['11.50', '13.00', '16.00'],
       },
       {
         name: '🔥 Spicy rare beef',
-        size: ['Large'],
-        price: ['13.95'],
+        size: ['Small', 'Large', 'Extra Large'],
+        price: ['11.95', '13.95', '16.95'],
       },
       {
         name: '🥩 Rare beef, brisket, tripe, beef ball',
-        size: ['Large'],
-        price: ['15.50'],
+        size: ['Small', 'Large', 'Extra Large'],
+        price: ['13.00', '15.50', '18.50'],
       },
       {
         name: '🥦 Tofu & Vegetable',
-        size: ['Large'],
-        price: ['13.95'],
+        size: ['Small', 'Large', 'Extra Large'],
+        price: ['11.95', '13.95', '16.95'],
       },
       {
         name: '🍖 Special Pho Chopstix with Short Rib',
@@ -116,6 +121,7 @@ export const foods = [
     ],
     price: ['11.50', '13.00', '16.00'],
     img: '/assets/images/gallery/3.jpg',
+    note: '* Only Large size available for takeout and delivery',
   },
   {
     id: 4,
@@ -132,11 +138,16 @@ export const foods = [
     desc: '',
     choice: [
       {
+        size: ['Small'],
+        price: ['11.50'],
+      },
+      {
         size: ['Large'],
         price: ['13.00'],
       },
     ],
     img: '',
+    note: '* Only Large size available for takeout and delivery',
   },
   {
     id: 6,
@@ -146,16 +157,17 @@ export const foods = [
     choice: [
       {
         name: 'Chicken & Shrimp',
-        size: ['Large'],
-        price: ['14.95'],
+        size: ['Small', 'Large'],
+        price: ['13.00', '14.95'],
       },
       {
         name: 'Pork & Shrimp',
-        size: ['Large'],
-        price: ['14.95'],
+        size: ['Small', 'Large'],
+        price: ['13.00', '14.95'],
       },
     ],
     img: '',
+    note: '* Only Large size available for takeout and delivery',
   },
 
   {
@@ -166,16 +178,17 @@ export const foods = [
     choice: [
       {
         name: 'Chicken & Shrimp',
-        size: ['Large'],
-        price: ['15.50'],
+        size: ['Small', 'Large'],
+        price: ['13.50', '15.50'],
       },
       {
         name: 'Pork & Shrimp',
-        size: ['Large'],
-        price: ['15.50'],
+        size: ['Small', 'Large'],
+        price: ['13.50', '15.50'],
       },
     ],
     img: '',
+    note: '* Only Large size available for takeout and delivery',
   },
   {
     id: 8,
@@ -325,49 +338,49 @@ export const foods = [
   {
     id: 30,
     name: '🥩 Meat',
-    category: '🍳Extra',
+    category: '🍳Extras',
     price: '4.75',
   },
   {
     id: 31,
     name: '🍤 Shrimp',
-    category: '🍳Extra',
+    category: '🍳Extras',
     price: '4.50',
   },
   {
     id: 32,
     name: '🧈 Fried Tofu',
-    category: '🍳Extra',
+    category: '🍳Extras',
     price: '4.25',
   },
   {
     id: 33,
     name: '🥦 Vegetable',
-    category: '🍳Extra',
+    category: '🍳Extras',
     price: '4.25',
   },
   {
     id: 34,
     name: '🍲 Soup',
-    category: '🍳Extra',
+    category: '🍳Extras',
     price: '2.00',
   },
   {
     id: 35,
     name: '🍚 Rice',
-    category: '🍳Extra',
+    category: '🍳Extras',
     price: '2.25',
   },
   {
     id: 36,
     name: '🍜 Noodle',
-    category: '🍳Extra',
+    category: '🍳Extras',
     price: '2.25',
   },
   {
     id: 37,
     name: '🍳 Fried Egg',
-    category: '🍳Extra',
+    category: '🍳Extras',
     price: '3.00',
   },
   {
@@ -426,35 +439,42 @@ export const galleryItems = [
     id: 1,
     original: 'assets/images/gallery/3.jpg',
     thumbnail: 'assets/images/gallery/3-thumb.jpg',
+    originalClass: 'custom-image-gallery',
   },
   {
     id: 2,
     original: 'assets/images/gallery/4.jpg',
     thumbnail: 'assets/images/gallery/4-thumb.jpg',
+    originalClass: 'custom-image-gallery',
   },
   {
     id: 3,
     original: 'assets/images/gallery/10.jpg',
     thumbnail: 'assets/images/gallery/10-thumb.jpg',
+    originalClass: 'custom-image-gallery',
   },
   {
     id: 4,
     original: 'assets/images/gallery/15.jpg',
     thumbnail: 'assets/images/gallery/15-thumb.jpg',
+    originalClass: 'custom-image-gallery',
   },
   {
     id: 5,
     original: 'assets/images/gallery/2.jpg',
     thumbnail: 'assets/images/gallery/2-thumb.jpg',
+    originalClass: 'custom-image-gallery',
   },
   {
     id: 6,
     original: 'assets/images/gallery/13.jpg',
     thumbnail: 'assets/images/gallery/13-thumb.jpg',
+    originalClass: 'custom-image-gallery',
   },
   {
     id: 7,
     original: 'assets/images/gallery/8.jpg',
     thumbnail: 'assets/images/gallery/8-thumb.jpg',
+    originalClass: 'custom-image-gallery',
   },
 ];

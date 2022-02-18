@@ -29,6 +29,9 @@ export const NavLink = styled(Nav.Link)`
   @media (max-width: 720px) {
     margin-right: 0;
   }
+  @media (max-width: 992px) {
+    font-size: 16px;
+  }
 `;
 
 export const Button = styled.a`

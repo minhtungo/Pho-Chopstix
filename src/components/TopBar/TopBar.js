@@ -37,9 +37,11 @@ const TopBar = () => {
           </Info>
           <Info className='d-flex align-items-center ms-4'>
             <WatchLaterOutlined style={iconStyle} />{' '}
-            {today === 'Sat' || today === 'Sun'
+            {today === 'Fri' || today === 'Sat'
+              ? 'Today: 11 a.m - 8:30 p.m'
+              : today === 'Sun'
               ? 'Today: 12 p.m - 8 p.m'
-              : 'Today: 11 a.m - 8 p.m'}
+              : '11 a.m - 8 p.m'}
           </Info>
         </div>
       </Container>

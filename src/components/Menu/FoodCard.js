@@ -24,7 +24,7 @@ const FoodCard = ({ food, onClick }) => {
 
   return (
     <Card
-      className='food-card--vertical animate__animated animate__fadeInUp animate__duration-2s'
+      className='food-card--vertical animate__animated animate__fadeInUp animate__duration-2s g-2'
       onClick={onClick}
     >
       {foodImage}

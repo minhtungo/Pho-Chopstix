@@ -36,10 +36,11 @@ export const Logo = styled.h1`
 export const Desc = styled.h3`
   font-family: 'Poppins' !important;
   font-size: 1.2rem;
-  margin-top: -15px;
+  margin-top: 12px;
   margin-bottom: 35px;
   @media (max-width: 768px) {
     font-size: 0.85rem;
+    margin-top: 5px;
   }
 `;
 

@@ -7,11 +7,8 @@ export const MainContainer = styled.section`
 `;
 
 export const Column = styled.div`
-  padding: 0 6px;
+  padding: 6px;
   margin-bottom: 0px;
-  @media (max-width: 768px) {
-    margin-bottom: 10px;
-  }
 
   & ul {
     padding: 12px 0 5px 0;
@@ -64,10 +61,10 @@ export const StyledContainer = styled.section`
 `;
 export const Card = styled.div`
   cursor: pointer;
-  height: 158px;
+  height: 100%;
   background: rgba(13, 13, 13, 0.4);
   border-radius: 5px;
-  border: 1px solid #595959;
+  border: 1px solid rgb(26, 26, 26);
   overflow: hidden;
   margin: 6px 0;
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
@@ -75,10 +72,9 @@ export const Card = styled.div`
   -webkit-transition: 0.1s;
   transition: border-color 250ms ease-in-out 0s;
   &:hover {
-    border-color: #b3b3b3;
+    border-color: rgb(38, 38, 38);
   }
   @media (max-width: 768px) {
-    height: fit-content;
     margin-bottom: 0;
   }
 `;
@@ -118,10 +114,22 @@ export const FoodName = styled.h3`
   font-weight: 400;
   margin: 0;
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 0.95rem;
   }
   @media (min-width: 768px) {
-    font-size: 18px;
+    font-size: 1.125rem;
+  }
+`;
+export const FoodModalName = styled.h3`
+  color: #e6e6e6;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+  @media (min-width: 768px) {
+    font-size: 1.2rem;
   }
 `;
 export const FoodDesc = styled.h5`
@@ -166,11 +174,14 @@ export const ItemRow = styled.div`
   align-items: center;
   padding: 2px 0;
   line-height: 8px;
-  &:hover {
-    background-color: rgba(242, 242, 242, 0.2);
+  &:hover p {
+    color: #bfbfbf;
+  }
+  &:hover h6 {
+    color: #ffd11a;
   }
 `;
-export const ItemPrice = styled.h5`
+export const ItemPrice = styled.h6`
   margin-bottom: 0;
   color: #ffd633;
   font-size: 14px;
@@ -187,3 +198,4 @@ export const ItemSize = styled.p`
     font-size: 15px;
   }
 `;
+export const Note = styled.p``;

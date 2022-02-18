@@ -38,10 +38,6 @@ const Info = () => {
         <Phone className={contactIcon} />
         <Number href={`tel:${contactInfo.phone}`}> {contactInfo.phone}</Number>
       </div>
-      <div className={column} data-aos='zoom-in' data-aos-delay='120'>
-        <Mail className={contactIcon} />
-        <Number href='mailto:phochopstix@gmail.com'>{contactInfo.email}</Number>
-      </div>
     </Row>
   );
 };

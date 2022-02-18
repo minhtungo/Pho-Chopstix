@@ -1,6 +1,7 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
 import { useState, useEffect } from 'react';
+
 import { Menu } from '@material-ui/icons';
 import { Header, StyledNavbar, Logo, NavLink, Button } from './MainNavStyling';
 import {contactInfo} from '../../data';

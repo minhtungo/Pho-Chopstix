@@ -59,7 +59,7 @@
 
 /* Modal */
 .modal {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-open {
@@ -72,7 +72,7 @@
 }
 
 .modal-header {
-    background-image: linear-gradient(to right, #0d0d0d, #1a1a1a);
+    background-color: rgba(0, 0, 0, 0.8);
     border: none !important;
     font-size: 1rem;
     color: white;
@@ -89,7 +89,7 @@
 
 .modal-body {
     font-size: 0.875rem;
-    background-color: rgb(13, 13, 13);
+    background-color: rgba(0, 0, 0, 0.8);
     border: none !important;
     letter-spacing: -0.14px;
     line-height: 1.25em;
@@ -97,7 +97,12 @@
 }
 
 .modal-footer {
-    background-color: #2d3739;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: flex-start !important;
+    padding: 0 10px 13px 25px !important;
+    color: rgb(230, 230, 230);
+    font-style: italic;
+    border: none !important;
 }
 
 .modal-infotype {
@@ -148,7 +153,16 @@
     margin: 4px 10px;
 }
 
+.image-gallery-svg {
+    height: 32.5px !important;
+}
 
+.custom-image-gallery {
+    max-height: 550px;
+    object-fit: contain;
+    text-align: center;
+    margin: auto;
+}
 
 .food-card--vertical {
     display: -webkit-box;
@@ -158,12 +172,35 @@
 
 }
 
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 @media (max-width: 768px) {
     .food-card--vertical img {
         width: 128px;
-        height: 110px;
+        min-height: 110px;
+        height: 100%;
         -o-object-fit: cover;
         object-fit: cover;
+    }
+    .modal-footer {
+        font-size: 14px;
     }
 }
 
