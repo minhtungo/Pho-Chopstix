@@ -26,11 +26,11 @@ export const NavLink = styled(Nav.Link)`
   &:active {
     color: #ff1f40 !important;
   }
-  @media (max-width: 720px) {
+  @media (max-width: 768px) {
     margin-right: 0;
   }
   @media (max-width: 992px) {
-    font-size: 16px;
+    font-size: 16.5px;
   }
 `;
 
@@ -51,5 +51,9 @@ export const Button = styled.a`
   &:hover {
     background: #ac0906;
     color: #d9d9d9;
+  }
+  @media (max-width: 992px) {
+    font-size: 16px !important;
+    padding: 5px 9px;
   }
 `;

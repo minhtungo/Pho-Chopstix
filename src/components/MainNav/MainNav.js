@@ -4,11 +4,12 @@ import { useState, useEffect } from 'react';
 
 import { Menu } from '@material-ui/icons';
 import { Header, StyledNavbar, Logo, NavLink, Button } from './MainNavStyling';
-import {contactInfo} from '../../data';
+import { contactInfo } from '../../data';
+import './MainNav.css';
 
 const MainNav = () => {
   const [colorChange, setColorChange] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
       setColorChange(true);
@@ -22,7 +23,7 @@ const MainNav = () => {
     window.addEventListener(
       'resize',
       () => {
-        const ismobile = window.innerWidth < 768;
+        const ismobile = window.innerWidth < 768 ;
         if (ismobile !== isMobile) setIsMobile(ismobile);
       },
       false

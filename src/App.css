@@ -15,48 +15,6 @@
     font-style: normal;
 }
 
-/* Navbar and Topbar */
-.adjustTopBar {
-    top: -40px !important;
-}
-
-.adjustNavBar {
-    /* background-color: rgba(0, 0, 0, 0.6); */
-    /* background: rgba(26, 24, 22, 0.7) !important; */
-    top: 0 !important;
-}
-
-.colorChange {
-    background: rgba(26, 24, 22, 0.75) !important;
-}
-
-.buttonClicked {
-    background: #e60a08 !important;
-    color: #d9d9d9 !important;
-}
-
-/* Menu */
-.card-block {
-    font-size: 1em;
-    position: relative;
-    margin: 0;
-    padding: 1em;
-    border: none;
-    border-top: 1px solid rgba(34, 36, 38, .1);
-    box-shadow: none;
-
-}
-
-.card {
-    font-size: 1em;
-    overflow: hidden;
-    padding: 5;
-    border: none;
-    border-radius: .28571429rem;
-    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-    margin-top: 20px;
-}
-
 /* Modal */
 .modal {
     background-color: rgba(0, 0, 0, 0.3);
@@ -72,7 +30,7 @@
 }
 
 .modal-header {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.945);
     border: none !important;
     font-size: 1rem;
     color: white;
@@ -89,7 +47,7 @@
 
 .modal-body {
     font-size: 0.875rem;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.945);
     border: none !important;
     letter-spacing: -0.14px;
     line-height: 1.25em;
@@ -97,12 +55,13 @@
 }
 
 .modal-footer {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.945);
     justify-content: flex-start !important;
     padding: 0 10px 13px 25px !important;
-    color: rgb(230, 230, 230);
+    color: #d10d09;
     font-style: italic;
     border: none !important;
+
 }
 
 .modal-infotype {
@@ -157,20 +116,6 @@
     height: 32.5px !important;
 }
 
-.custom-image-gallery {
-    max-height: 550px;
-    object-fit: contain;
-    text-align: center;
-    margin: auto;
-}
-
-.food-card--vertical {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-
-}
 
 ::-webkit-scrollbar {
     width: 2px;
@@ -178,7 +123,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
- box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Handle */
@@ -192,13 +137,6 @@
 }
 
 @media (max-width: 768px) {
-    .food-card--vertical img {
-        width: 128px;
-        min-height: 110px;
-        height: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
     .modal-footer {
         font-size: 14px;
     }
@@ -213,10 +151,4 @@
         margin-bottom: 20px;
     }
 
-    .food-card--vertical img {
-        width: 176px;
-        height: 158px;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
 }

@@ -56,6 +56,10 @@ export const Number = styled.a`
 export const Days = styled.span`
   font-size: 0.95rem;
   font-weight: 500;
+
+@media (max-width: 1264px) {
+  display: block;
+}
 `;
 
 export const CopyRight = styled.div`

@@ -68,7 +68,7 @@ export const foods = [
     name: 'Deep Fried Spring Roll',
     desc: '2 Rolls',
     price: '5.50',
-    img: '',
+    img: '/assets/images/foods/1.jpg',
     note: '* Pick your sauce: Fish sauce, Peanut sauce, Tamarind sauce',
   },
   {
@@ -204,7 +204,7 @@ export const foods = [
     name: 'Waterfall Fried Chicken',
     desc: '',
     price: '15.50',
-    img: '',
+    img: '/assets/images/foods/9.jpg',
   },
   {
     id: 10,
@@ -439,42 +439,35 @@ export const galleryItems = [
     id: 1,
     original: 'assets/images/gallery/3.jpg',
     thumbnail: 'assets/images/gallery/3-thumb.jpg',
-    originalClass: 'custom-image-gallery',
   },
   {
     id: 2,
     original: 'assets/images/gallery/4.jpg',
     thumbnail: 'assets/images/gallery/4-thumb.jpg',
-    originalClass: 'custom-image-gallery',
   },
   {
     id: 3,
     original: 'assets/images/gallery/10.jpg',
     thumbnail: 'assets/images/gallery/10-thumb.jpg',
-    originalClass: 'custom-image-gallery',
   },
   {
     id: 4,
     original: 'assets/images/gallery/15.jpg',
     thumbnail: 'assets/images/gallery/15-thumb.jpg',
-    originalClass: 'custom-image-gallery',
   },
   {
     id: 5,
     original: 'assets/images/gallery/2.jpg',
     thumbnail: 'assets/images/gallery/2-thumb.jpg',
-    originalClass: 'custom-image-gallery',
   },
   {
     id: 6,
     original: 'assets/images/gallery/13.jpg',
     thumbnail: 'assets/images/gallery/13-thumb.jpg',
-    originalClass: 'custom-image-gallery',
   },
   {
     id: 7,
     original: 'assets/images/gallery/8.jpg',
     thumbnail: 'assets/images/gallery/8-thumb.jpg',
-    originalClass: 'custom-image-gallery',
   },
 ];

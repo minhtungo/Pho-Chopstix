@@ -1,0 +1,29 @@
+/* Navbar and Topbar */
+.adjustTopBar {
+    top: -40px !important;
+}
+
+.adjustNavBar {
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    /* background: rgba(26, 24, 22, 0.7) !important; */
+    top: 0 !important;
+}
+
+.colorChange {
+    background: rgba(26, 24, 22, 0.75) !important;
+}
+
+.buttonClicked {
+    background: #e60a08 !important;
+    color: #d9d9d9 !important;
+}
+
+.navbar .container {
+    padding: 0;
+}
+
+@media (min-width: 850px) {
+    .navbar .container {
+         min-width: 850px !important;
+    }
+}

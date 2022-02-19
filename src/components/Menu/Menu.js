@@ -12,6 +12,8 @@ import { RestaurantMenu } from '@material-ui/icons';
 import FoodCard from './FoodCard';
 import FoodModal from './FoodModal';
 
+import './Menu.css'
+
 const Menu = () => {
   const allCategories = [
     ...new Set(foods.map((foodItem) => foodItem.category)),

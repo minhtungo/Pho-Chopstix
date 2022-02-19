@@ -114,7 +114,7 @@ export const FoodName = styled.h3`
   font-weight: 400;
   margin: 0;
   @media (max-width: 768px) {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
   @media (min-width: 768px) {
     font-size: 1.125rem;
