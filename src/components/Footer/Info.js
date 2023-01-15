@@ -1,4 +1,4 @@
-import { AccessTimeOutlined, Phone, Room, Mail } from '@material-ui/icons';
+import { AccessTimeOutlined, Phone, Room } from '@material-ui/icons';
 import { Row } from 'react-bootstrap';
 
 import '../../App.css';
@@ -19,8 +19,7 @@ const Info = () => {
     <Row className='my-4'>
       <div className={column} data-aos='zoom-in' data-aos-delay='120'>
         <AccessTimeOutlined
-          style={{ fontSize: '2.2rem' }}
-          className='mb-4 text-center'
+          className={`mb-4 text-center ${contactIcon}`}
         />
         <List className='ps-0'>
           {contactInfo.openingHours.map((opening) => (

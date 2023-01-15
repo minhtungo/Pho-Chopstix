@@ -15,6 +15,7 @@
     font-style: normal;
 }
 
+
 /* Modal */
 .modal {
     background-color: rgba(0, 0, 0, 0.3);
@@ -46,6 +47,7 @@
 }
 
 .modal-body {
+    padding: 3px 25px 8px 25px !important;
     font-size: 0.875rem;
     background-color: rgba(0, 0, 0, 0.945);
     border: none !important;
@@ -143,6 +145,10 @@
 }
 
 @media (min-width: 768px) {
+    .modal-body {
+        padding: 3px 50px 8px 50px !important;
+    }
+
     .section-title h2 {
         margin-top: 20px;
     }

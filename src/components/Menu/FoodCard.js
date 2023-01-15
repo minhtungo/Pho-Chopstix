@@ -16,11 +16,19 @@ const FoodCard = ({ food, onClick }) => {
     </ImageContainer>
   );
   const foodName = food.id >= 30 ? food.name : `${food.id}. ${food.name}`;
-  const foodPrice = !food.choice ? (
-    `$${food.price}`
-  ) : (
-    <ArrowForwardIosOutlined style={{ fontSize: '17px' }} />
-  );
+  const foodPrice =
+    !food.choice ||
+    food.category === '🥤Bubble Tea' ||
+    food.id === 2 ||
+    food.id === 11 ||
+    food.id === 12 ||
+    food.id === 13 ||
+    food.id === 15 ||
+    food.id === 14 ? (
+      `$${food.price}`
+    ) : (
+      <ArrowForwardIosOutlined style={{ fontSize: '17px' }} />
+    );
 
   return (
     <Card

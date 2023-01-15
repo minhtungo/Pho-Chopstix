@@ -44,10 +44,10 @@ const Slider = () => {
               {item.desc}
             </Desc>
             <Button
-              href='#menu'
+              href='https://pho-chopstix.pikapoint.io/'
               className='animate__animated animate__fadeInUp'
             >
-              Our Menu
+              Order Now
             </Button>
           </CarouselCaption>
         </Carousel.Item>

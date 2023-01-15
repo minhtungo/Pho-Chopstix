@@ -40,8 +40,8 @@ const TopBar = () => {
             {today === 'Fri' || today === 'Sat'
               ? 'Today: 11 a.m - 8:30 p.m'
               : today === 'Sun'
-              ? 'Today: 12 p.m - 8 p.m'
-              : '11 a.m - 8 p.m'}
+              ? 'Closed'
+              : 'Today: 11 a.m - 8 p.m'}
           </Info>
         </div>
       </Container>

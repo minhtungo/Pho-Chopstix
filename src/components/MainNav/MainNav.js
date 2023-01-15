@@ -47,7 +47,7 @@ const MainNav = () => {
             <Navbar.Brand href='#home'>
               <Logo
                 href='#home'
-                src={`${process.env.PUBLIC_URL}/assets/images/chopstix.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/chopstixLogo.png`}
                 className='d-inline-block align-top'
                 alt='Chopstix Logo'
               ></Logo>

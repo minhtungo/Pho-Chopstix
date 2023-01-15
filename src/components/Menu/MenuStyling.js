@@ -7,8 +7,8 @@ export const MainContainer = styled.section`
 `;
 
 export const Column = styled.div`
-  padding: 6px;
-  margin-bottom: 0px;
+  padding: 3.5px;
+  margin: 0;
 
   & ul {
     padding: 12px 0 5px 0;
@@ -22,6 +22,7 @@ export const Column = styled.div`
     justify-content: center;
     align-items: center;
   }
+
 `;
 
 export const FoodCategory = styled.h4`
@@ -31,7 +32,7 @@ export const FoodCategory = styled.h4`
   margin: 6px 0;
 `;
 
-export const ListItem = styled.button`
+export const ListItem = styled.li`
   cursor: pointer;
   display: flex;
   padding: 9px 10px;
@@ -46,8 +47,7 @@ export const ListItem = styled.button`
   border-radius: 15px;
   align-items: center;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background: #e60a08;
     color: #d9d9d9;
   }
@@ -60,6 +60,7 @@ export const StyledContainer = styled.section`
   padding: 5px 13.2px 15px 13.2px !important;
 `;
 export const Card = styled.div`
+  margin: 0 !important;
   cursor: pointer;
   height: 100%;
   background: rgba(13, 13, 13, 0.4);
@@ -73,9 +74,6 @@ export const Card = styled.div`
   transition: border-color 250ms ease-in-out 0s;
   &:hover {
     border-color: rgb(38, 38, 38);
-  }
-  @media (max-width: 768px) {
-    margin-bottom: 0;
   }
 `;
 export const ImageContainer = styled.div`
@@ -103,7 +101,7 @@ export const ModalImage = styled.img`
 
 export const Content = styled.div`
   @media (max-width: 768px) {
-    padding: 8px 16px;
+    padding: 8px;
   }
   @media (min-width: 768px) {
     padding: 16px;
@@ -143,7 +141,7 @@ export const FoodDesc = styled.h5`
   }
 `;
 export const Price = styled.h4`
-  font-weight: 400;
+  font-weight: 600;
   text-align: right;
   font-size: 14px;
   @media (min-width: 768px) {
@@ -165,9 +163,9 @@ export const ItemName = styled.h5`
   font-weight: 300;
   color: rgb(255, 31, 64);
   margin-bottom: 2px;
-  font-size: 14px;
+  font-size: 15.5px;
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 16.5px;
   }
 `;
 export const ItemRow = styled.div`
@@ -193,9 +191,9 @@ export const ItemSize = styled.p`
   margin-bottom: 0;
   color: #cccccc;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 14px;
   @media (min-width: 768px) {
-    font-size: 15px;
+    font-size: 16px;
   }
 `;
 export const Note = styled.p``;

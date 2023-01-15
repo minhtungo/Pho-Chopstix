@@ -48,7 +48,7 @@ const FoodModal = ({ foods, onHide, show, foodSelected }) => {
               {food.id >= 30 ? food.name : `${food.id}. ${food.name}`}
             </FoodModalName>
           </Modal.Header>
-          <Modal.Body className='modal-body' style={{ padding: '3px 25px 12px 25px' }}>
+          <Modal.Body className='modal-body'>
             <FoodDesc>{food.desc}</FoodDesc>
             {food.choice ? (
               <InfoContainer className='d-flex flex-column'>
@@ -56,7 +56,7 @@ const FoodModal = ({ foods, onHide, show, foodSelected }) => {
                   <>
                     {food.choice.map((item, id) => (
                       <li key={id}>
-                        <ItemName>{item.name}</ItemName>
+                        <ItemName className='text-center'>{item.name}</ItemName>
                         {item.size.map((i, idx) => (
                           <ItemRow className='d-flex justify-content-between'>
                             <ItemSize>{i}</ItemSize>
@@ -72,10 +72,15 @@ const FoodModal = ({ foods, onHide, show, foodSelected }) => {
                       <li key={id}>
                         <ItemRow className='d-flex justify-content-between'>
                           <ItemName>{item.name}</ItemName>
-                          <ItemPrice>${item.price}</ItemPrice>
+                          {item.price && <ItemPrice>${item.price}</ItemPrice>}
                         </ItemRow>
                       </li>
                     ))}
+                    {food.price && (
+                      <ItemPrice style={{ textAlign: 'right' }}>
+                        ${food.price}
+                      </ItemPrice>
+                    )}
                   </>
                 )}
               </InfoContainer>
