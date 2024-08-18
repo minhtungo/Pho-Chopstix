@@ -197,7 +197,6 @@ export const foods = [
     id: "Must Try 🔥",
     category: '🍜Noodle Soup - Pho',
     name: 'Bun Bo Hue - Spicy Beef Noodle Soup',
-    img: '/assets/images/gallery/4.jpg',
     choice: [
       {
         size: ['Large'],
