@@ -125,21 +125,13 @@ export const foods = [
   {
     id: 4,
     category: '🍜Noodle Soup - Pho',
-    name: 'Bun Bo Hue - Spicy Beef Noodle Soup',
-    size: ['Large', 'Extra Large'],
-    price: ['17.95', '22.00'],
-    img: '/assets/images/gallery/4.jpg',
-  },
-  {
-    id: 5,
-    category: '🍜Noodle Soup - Pho',
     name: 'Bò Kho - Beef Stew',
     desc: 'Rice Noodle/Bread',
     price: '16.95',
     img: '/assets/images/gallery/4.jpg',
   },
   {
-    id: 6,
+    id: 5,
     category: '🍜Noodle Soup - Pho',
     name: 'Phở Gà - Rice Noodle in Chicken Broth with Chicken Breast',
     desc: '',
@@ -161,7 +153,7 @@ export const foods = [
     note: '* Only Large size available for takeout and delivery',
   },
   {
-    id: 7,
+    id: 6,
     category: '🍜Noodle Soup - Pho',
     name: 'Hủ Tíu - Vietnamese Style Rice Noodle Soup',
     desc: '2 choices',
@@ -182,7 +174,7 @@ export const foods = [
   },
 
   {
-    id: 8,
+    id: 7,
     category: '🍜Noodle Soup - Pho',
     name: 'Hủ Tíu Khô - Vietnamese Dry Noodle in Special Sauce',
     desc: 'Soup on the side - 2 choices ',
@@ -201,8 +193,24 @@ export const foods = [
     img: '',
     note: '* Only Large size available for takeout and delivery',
   },
+    {
+    id: "",
+    category: '🍜Noodle Soup - Pho',
+    name: 'Bun Bo Hue - Spicy Beef Noodle Soup',
+    img: '/assets/images/gallery/4.jpg',
+    choice: [
+      {
+        size: ['Large'],
+        price: ['17.95'],
+      },
+      {
+        size: ['Extra Large'],
+        price: ['22.00'],
+      },
+    ],
+  },
   {
-    id: 9,
+    id: 8,
     category: '🍚Rice Plate',
     name: 'Grilled Chicken, Fried Eggs',
     desc: '',
@@ -210,7 +218,7 @@ export const foods = [
     img: 'assets/images/foods/8.jpg',
   },
   {
-    id: 10,
+    id: 9,
     category: '🍚Rice Plate',
     name: 'Waterfall Fried Chicken',
     desc: '',
@@ -218,7 +226,7 @@ export const foods = [
     img: '/assets/images/foods/9.jpg',
   },
   {
-    id: 11,
+    id: 10,
     category: '🍚Rice Plate',
     name: 'Grilled Chicken & Shrimp',
     desc: '',
@@ -226,7 +234,7 @@ export const foods = [
     img: 'assets/images/foods/10.jpg',
   },
   {
-    id: 12,
+    id: 11,
     category: '🍚Rice Plate',
     name: 'Fried Rice',
     desc: '4 choices',
@@ -248,7 +256,7 @@ export const foods = [
     img: '',
   },
   {
-    id: 13,
+    id: 12,
     category: '🍚Rice Plate',
     name: '🔥Spicy Stir Fried Lemongrass',
     desc: 'Chicken/Beef/Tofu',
@@ -267,7 +275,7 @@ export const foods = [
     img: '',
   },
   {
-    id: 14,
+    id: 13,
     category: '🍚Rice Plate',
     name: '🔥Spicy Vietnamese Style Stir Fried Chinese Eggplant & Vegetable with',
     desc: 'Beef/Chicken/Shrimp/Tofu',
@@ -290,7 +298,7 @@ export const foods = [
   },
 
   {
-    id: 15,
+    id: 14,
     category: '🍚Rice Plate',
     name: '🔥Spicy Thai Style Stir Fried Chinese Eggplant & Vegetables, Coconut Milk with',
     desc: 'Beef/Chicken/Shrimp/Tofu',
@@ -312,7 +320,7 @@ export const foods = [
     img: '',
   },
   {
-    id: 16,
+    id: 15,
     category: '🍝Vermicelli',
     name: 'Vermicelli Bowl',
     desc: '6 choices - Served with spring rolls, lettuce, cucumber, bean sprout, peanut',
